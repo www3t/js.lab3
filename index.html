@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Transaction Tracker</h1>
+    <form id="transaction-form">
+        <input type="text" id="transaction-amount" placeholder="Amount" required>
+        <select id="transaction-category">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+        </select>
+        <input type="text" id="transaction-description" placeholder="Description" required>
+        <button type="submit">Add Transaction</button>
+    </form>
+    <table id="transaction-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date and Time</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div id="total-amount">Total: 0</div>
+    <div id="transaction-details"></div>
+    <script src="script.js"></script>
+</body>
+</html>
